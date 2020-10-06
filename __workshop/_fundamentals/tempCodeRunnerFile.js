@@ -1,0 +1,2 @@
+
+  let average = 0;
