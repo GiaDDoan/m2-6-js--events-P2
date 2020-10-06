@@ -19,7 +19,21 @@ const people = [
 
 function fullName(peopleArr) {
   // return something
+  let arrayName = peopleArr.map ((persons) => {
+    return persons.name;
+  })
+  //return arrayName; array of names (F, M, L)
+  let eachName = arrayName.map ((person) => {
+    if (typeof(person.first) === 'string' && typeof(person.middle) === 'string' && typeof(person.last) === 'string' ) {
+      return `${person.first} ${person.middle} ${person.last}`;
+    } else {
+      return `${person.first} ${person.last}`;
+    }
+  })
+  return eachName;
 }
+
+console.log(fullName(people));
 
 // 2. Do a console.log to verify your function.
 
