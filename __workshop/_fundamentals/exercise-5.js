@@ -87,9 +87,21 @@ const staffMembers = [
 
 const getData = (arr, key, val) => {
   // return something
+  let staffArr = arr.map((staffs) => {
+    return staffs;
+  })
+  //return staffArr;
+
+  let insideStaffArr = staffArr.filter((staff) => {
+    if (staff.title === val) {
+      return true;
+    }
+  })
+  return insideStaffArr;
 };
 
 // 2. Do a console.log to verify your function.
+console.log(getData(staffMembers, "title", "Web Developer II"))
 
 // 3. Run the test to validate: yarn test exercise-5
 

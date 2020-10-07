@@ -5,10 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap" rel="stylesheet"/>
 
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1 class="formTitle">Signup Form</h1>
+      <form class='form'>
+        <div class="fillPart">
+          <div class="info name">
+            <label class="label">Full name:</label>
+            <input type="text" class="input" required>
+          </div>
+          <div class="info street">
+            <label class="label">Street address:</label>
+            <input type="text" class="input" required>
+          </div>
+          <div class="info email">
+            <label class="label">Email address:</label>
+            <input type="email" class="input" required>
+          </div>
+          <div class="info phone">
+            <label class="label">Phone number:</label>
+            <input type="text" class="input" required>
+          </div>
+          <div class="info password">
+            <label class="label">Password:</label>
+            <input type="text" class="input" required>
+          </div>
+          <div class="info passwordConfirm">
+            <label class="label">Confirm password:</label>
+            <input type="text" class="input" required>
+          </div>
+        </div>
+      
+        <div class="term">
+          <input type="checkbox" required>
+          <label class="confirm">I agree to the <a href="#">terms of service</a>.</label>
+        </div>
+
+        <div class="error"></div>  <!-- FOR ERROR-MESSAGE JAVASCRIPT -->
+  
+        <footer class="btnAll">
+          <button type="reset" value="Reset" class="btnClear" >Clear</button>
+          <button type="submit" value="Submit" class="btnSubmit">Submit</button>
+        </footer>
+      </form>
+    </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
