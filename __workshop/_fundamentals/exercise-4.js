@@ -21,7 +21,7 @@ function olderPeople(peopleArr, age) {
   // return something
   let newArray = peopleArr.filter((person) => {
     if (person.age > age) {
-      return person;
+      return true;
     } 
   })
   return newArray;

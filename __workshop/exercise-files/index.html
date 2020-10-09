@@ -32,20 +32,20 @@
           </div>
           <div class="info password">
             <label class="label">Password:</label>
-            <input type="text" class="input" required>
+            <input type="text" class="input passwordInput" required>
           </div>
           <div class="info passwordConfirm">
             <label class="label">Confirm password:</label>
-            <input type="text" class="input" required>
+            <input type="text" class="input passwordConfirmInput" required>
           </div>
         </div>
       
         <div class="term">
-          <input type="checkbox" required>
+          <input type="checkbox" class="myCheck">
           <label class="confirm">I agree to the <a href="#">terms of service</a>.</label>
         </div>
 
-        <div class="error"></div>  <!-- FOR ERROR-MESSAGE JAVASCRIPT -->
+        <div class="error">Your password is too short! Please provide a password that is at least 10 characters long.</div>  <!-- FOR ERROR-MESSAGE JAVASCRIPT -->
   
         <footer class="btnAll">
           <button type="reset" value="Reset" class="btnClear" >Clear</button>
