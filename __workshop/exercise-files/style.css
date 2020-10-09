@@ -20,8 +20,8 @@ body {
 
 .wrapper {
     margin-top: 32px;
-    /* max-width: 475px; max-width makes my form smaller? */
-    width: 475px;
+    max-width: 475px;
+    width: 100%;
     padding: 24px;
     background-color: white;
     border-radius: 16px;
